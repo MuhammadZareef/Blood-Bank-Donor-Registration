@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header_Container">
+        <div class="header_Heading">
+            <h1>Blood Bank Management System</h1>
+        </div>
+    </header>
+
+    <main class="main_Container">
+        <div class="main_Heading">
+            <h2>Donor Registration</h2>
+        </div>
+        <div class="form_Container">
+            <form action="" id="donorForm" onsubmit="event.preventDefault(); checkBloodGroup();">
+                <div class="form">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="" id="name" placeholder="Enter your name" required />
+                    </div>
+                    <div>
+                        <label for="fatherName">Father Name:</label>
+                        <input type="text" name="" id="fatherName" placeholder="Enter your father's name" />
+                    </div>
+                    <div>
+                        <label for="address">Address:</label>
+                        <textarea name="" id="address" rows="1" cols="20" placeholder="Enter address..."></textarea>
+                    </div>
+                    <div>
+                        <label for="selectCity">Select City:</label>
+                        <select name="" id="selectCity" required>
+                            <option value="" disabled selected>Select City</option>
+                            <option value="karachi">Karachi</option>
+                            <option value="hydrabad">Hyderabad</option>
+                            <option value="lahore">Lahore</option>
+                            <option value="faisalabad">Faisalabad</option>
+                            <option value="islamabad">Islamabad</option>
+                            <option value="rawalpindi">Rawalpindi</option>
+                            <option value="quetta">Quetta</option>
+                            <option value="multan">Multan</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="age">Age:</label>
+                        <input type="text" name="" id="age" placeholder="Enter your age" required/>
+                    </div>
+                    <div>
+                        <label for="bloodGroup">Select Blood Group:</label>
+                        <select name="bloodGroup" id="bloodGroup" required>
+                            <option value="" disabled selected>Select Blood Group</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Gender:</label>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male" required/>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" />
+                    </div>
+                    <div>
+                        <label for="contact">Mobile No:</label>
+                        <input type="text" name="" id="contact" placeholder="Enter your mobile no" />
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <section class="display_Container">
+
+        <div class="compatibleDonors" id="compatibleDonors" >
+            <div class="donor_Heading">
+                <h2>Compatible Donors</h2>
+            </div>
+            
+            <p id="displayDonors"></p>
+        </div>
+
+    </section>
+
+</body>
+<script src="app.js"></script>
+</html>

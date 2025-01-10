@@ -1,0 +1,155 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.header_Container{
+    height: 8vh;
+    background-color: red;
+}
+
+.header_Heading{
+    padding-top: 0.6rem;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 510px) {
+    .header_Heading h1{
+        font-size: 1.5rem;
+    }
+}
+
+.main_Container{
+    width: 80%;
+    height: 60vh;
+    margin: 2rem auto;
+}
+
+@media only screen and (max-width: 770px) {
+    .main_Container{
+        width: 99%;
+    }
+}
+
+.main_Heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    text-align: center;
+    background-color: red;
+}
+
+.form_Container{}
+
+.form{
+    height: 20rem;
+    padding-top: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(194, 27, 27);
+}
+
+.form label{
+    color: white;
+    font-size: 1.1rem;
+}
+
+.form input{
+    height: 25px;
+}
+
+.form select{
+    height: 25px;
+}
+
+#male{
+    height: 15px;
+    width: 30px;
+}
+
+#female{
+    height: 15px;
+    width: 30px;
+}
+
+.btn{
+    padding-top: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button{
+    width: 95%;
+    height: 5rem;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(194, 27, 27);
+}
+
+@media only screen and (max-width: 610px) {
+    .form{
+        grid-template-columns: repeat(1, 1fr);
+        height: 30rem;
+    }
+}
+
+.donor_Heading{
+    color: white;
+    background-color: red;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.compatibleDonors{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    height: 5rem;
+    background-color: rgb(194, 27, 27);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: red;
+    display: none;
+}
+
+@media only screen and (max-width: 770px) {
+    .compatibleDonors{
+        width: 99%;
+    }
+}
+
+.compatibleDonors p{
+    color: white;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 610px) {
+    .compatibleDonors{
+        margin-top: 8rem;
+    }
+}
